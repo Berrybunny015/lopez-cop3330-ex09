@@ -16,7 +16,7 @@ public class App {
         double ceilingWidth = ceilingWidthInput.nextDouble();
 
         double ceilingArea = ceilingLength * ceilingWidth; //calculate the area of the ceiling;
-        double numMajorityOfGallonsNeeded = (double)(ceilingArea / oneGallonPerNumSqFt); //calculate the majority of the gallons needed to paint the ceiling
+        double numMajorityOfGallonsNeeded = (ceilingArea / oneGallonPerNumSqFt); //calculate the majority of the gallons needed to paint the ceiling
         int numTotalGallonsNeeded = (int) Math.ceil(numMajorityOfGallonsNeeded); //calculate the total of the gallons needed to paint the ceiling via rounding up
 
         System.out.println("\nYou will need to purchase " + numTotalGallonsNeeded + " gallons of paint to cover " + (int)ceilingArea + " square feet."); //output #3
